@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HttpDemo_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ag2-RM-kUB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="暂无数据" translatesAutoresizingMaskIntoConstraints="NO" id="DuN-P0-gq8">
+                                        <rect key="frame" x="10" y="20" width="300" height="438"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGY-H5-EOi">
+                                        <rect key="frame" x="20" y="468" width="280" height="40"/>
+                                        <color key="backgroundColor" red="0.19250629150000001" green="0.58718936470000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="2Kl-Rg-gX3"/>
+                                        </constraints>
+                                        <state key="normal" title="请求数据">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="queryDataModelClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5x4-ap-jxE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpu-oW-FqL">
+                                        <rect key="frame" x="20" y="518" width="280" height="40"/>
+                                        <color key="backgroundColor" red="0.98823529409999999" green="0.45882352939999999" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="ez0-85-PRF"/>
+                                        </constraints>
+                                        <state key="normal" title="请求数据">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="queryDataClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="khv-Te-wwm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="DuN-P0-gq8" secondAttribute="trailing" constant="10" id="FvN-s1-7yj"/>
+                                    <constraint firstAttribute="bottom" secondItem="fpu-oW-FqL" secondAttribute="bottom" constant="10" id="Gbo-yx-axB"/>
+                                    <constraint firstItem="fpu-oW-FqL" firstAttribute="leading" secondItem="Ag2-RM-kUB" secondAttribute="leading" constant="20" id="Iai-vJ-YDc"/>
+                                    <constraint firstAttribute="trailing" secondItem="dGY-H5-EOi" secondAttribute="trailing" constant="20" id="KpL-XS-nGC"/>
+                                    <constraint firstItem="dGY-H5-EOi" firstAttribute="leading" secondItem="Ag2-RM-kUB" secondAttribute="leading" constant="20" id="RUi-qz-pJD"/>
+                                    <constraint firstItem="DuN-P0-gq8" firstAttribute="leading" secondItem="Ag2-RM-kUB" secondAttribute="leading" constant="10" id="TA9-y3-Psw"/>
+                                    <constraint firstItem="fpu-oW-FqL" firstAttribute="top" secondItem="dGY-H5-EOi" secondAttribute="bottom" constant="10" id="p0h-a1-j7K"/>
+                                    <constraint firstItem="dGY-H5-EOi" firstAttribute="top" secondItem="DuN-P0-gq8" secondAttribute="bottom" constant="10" id="sle-BM-8ME"/>
+                                    <constraint firstAttribute="trailing" secondItem="fpu-oW-FqL" secondAttribute="trailing" constant="20" id="yji-22-nqs"/>
+                                    <constraint firstItem="DuN-P0-gq8" firstAttribute="top" secondItem="Ag2-RM-kUB" secondAttribute="top" constant="20" id="zyN-DN-lPa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ag2-RM-kUB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PJG-7k-aWr"/>
+                            <constraint firstItem="Ag2-RM-kUB" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="XSL-Rf-hbl"/>
+                            <constraint firstItem="Ag2-RM-kUB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="bDZ-gt-9Cs"/>
+                            <constraint firstItem="Ag2-RM-kUB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hB4-QB-dvI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="showTextView" destination="DuN-P0-gq8" id="pSO-fx-2fn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="378"/>
+        </scene>
+    </scenes>
+</document>
